@@ -2,3 +2,10 @@ language: node_js
 node_js: node
 services:
 - mongodb
+deploy:
+  provider: heroku
+  api_key:
+    secure: dv/b6+uh1k0TEGiaWmhLQEL2BFLxDghqGO1CzwynZzPC9TFfdXRPy3FIXKbSdDfpxyffpuQweCav24NwSQm9Iu4NGYaQbb0fe4a3uvqGXgGqapWHd9iBOM5q8eKzl5k34HXWp+O3lfRGIj9/xcjf3+EN8t4w6Ya6qg0paNht0VRYBn7eiuUblmLyCOURC/H063jFkrA9ctNRSCt18kfwTW3S9C/QVOGCwzJddxV5lMSoTFXGuH5a1B25GqWMvwvnp1abNx0fDC78CA11p/HC7OJrzMiuXYYFhRnb620Kp8DGq6mqYmKEKEYCXRz0LgSlv4iuSDcd2n0e6JdfgTqExjBm7woKtPkTfaNuVsF7rQRuWRV9hbxuKaaddTpqskyDPRt0TxvsSgkqyFDBSOFQ0FiKInPs2oWJs3bXKnRrMrm8FxIeigDc+lpOKJJcMhoLzmlJo3JQBbi3aJjvZ2MXFiQ5cCc9bcRD8KVL+DP1EMKodIDOqgcfG00TxSV1iDHFS4YF7g50sZpxdi2SejqQMlCeV9Zs78gyEgeavYHENi+GOoL2G6SjpLDYUzb8Em/mfm4CuAxIDdc/v56xYA5AAZYgXr2El+Y1UTeP7SF+TU66c85mexhFxWm4yhU3ogkrh1sMpGfUpUSIk74xsNIbmSBo/2t58EOGl8/tB/JQEZk=
+  app: cheese-hub
+  on:
+    repo: inconbeo/cheesehub-server
